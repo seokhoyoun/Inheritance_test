@@ -7,8 +7,8 @@ public class Person {
 	private char gender;
 	
 	//Constructor
-	public Person() {
-		
+	public Person() {	// Super 클래스는 무조건 기본 생성자가 있어야한다.
+		System.out.println("person() run...");
 	}
 	
 	public Person(String name, int age, char gender) {
@@ -43,7 +43,7 @@ public class Person {
 	}
 	
 	public String information() {
-		return name+", "+age+", "+gender;
+		return name+", "+age+", "+gender+", ";
 	}
 	
 }

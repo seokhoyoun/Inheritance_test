@@ -8,9 +8,12 @@ public class Member extends Person{
 	
 	// Constructor
 	public Member() {
+		super(); // 생성자 안에서만 사용함. 반드시 첫 줄에만 기입해야 함.
+		System.out.println("member() run....");
 	}
 
 	public Member(double point, String memberId, String password) {
+		super();
 		this.point = point;
 		this.memberId = memberId;
 		this.password = password;
@@ -39,9 +42,16 @@ public class Member extends Person{
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	public Member(String name, int age, char gender, String memberId, String password, double point) {
+		super(name,age,gender);
+		this.point = point;
+		this.memberId = memberId;
+		this.password = password;
+	}
 	
+	@Override
 	public String information() {
-		return this.memberId +", "+ this.password+", "+this.point+" 포인트";
+		return super.information()+this.memberId +", "+ this.password+", "+this.point+"포인트";
 	}
 	
 	

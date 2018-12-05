@@ -1,7 +1,7 @@
 package practice.ext;
 
-public interface Predetor {
+public abstract class Predetor extends Animal {
 	
-	public String getFood();
+	public abstract String getFood();
 
 }

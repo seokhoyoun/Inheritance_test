@@ -1,6 +1,6 @@
 package practice.ext;
 
-public class Lion extends Animal implements Predetor,Barkable{
+public class Lion extends Predetor implements Barkable{
 	
 	public String getFood() {
 		return "banana";

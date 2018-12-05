@@ -16,7 +16,7 @@ public class Book extends Object{
 		this.author = author;
 		this.price = price;
 	}
-
+	// Get/Setter
 	public String getTitle() {
 		return title;
 	}
@@ -40,18 +40,23 @@ public class Book extends Object{
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	
+	// Method
+	@Override
 	public String toString() {
 		return this.title+" \n"+this.author+"\n"+this.price+"\n";
 	}
 	
-	public boolean equals(Book book2) {
-		if(this.title.equals(book2.getTitle())&&this.author.equals(book2.getAuthor())&&this.price == book2.getPrice()) 
+	@Override
+	public boolean equals(Object obj) {
+		if(obj.toString() == this.toString()) {
 			return true;
-		else
+		}
+		else {
 			return false;
+		}
 	}
 	
+	@Override
 	public Book clone() {
 		Book book2 = new Book();
 		book2.setTitle(title);

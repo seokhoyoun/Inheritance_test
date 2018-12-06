@@ -1,8 +1,6 @@
 package practice.ext;
 
-public class Crocodile extends Animal implements Predetor{
+public class Crocodile {
 	
-	public String getFood() {
-		return "blueberry";
-	}
+
 }

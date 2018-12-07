@@ -11,10 +11,10 @@ public class TestAbstClass {
 		// 래퍼런스 변수는 선언  가능함
 		
 		AbstClass ref;
-		ref = new Shape(15, 15);
+		/*ref = new Shape(15, 15);
 		System.out.println(ref);
 		ref = new Circle();
-		ref = new Rectangle();
+		ref = new Rectangle();*/
 	}
 
 }

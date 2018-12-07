@@ -1,6 +1,6 @@
 package poly.sample;
 
-public class Shape extends AbstClass{
+public abstract class Shape /*extends AbstClass*/implements IShape{
 	//Field
 	private int x; // x 좌표
 	private int y; // y 좌표
@@ -36,7 +36,7 @@ public class Shape extends AbstClass{
 		// return 클래스명 @ 16진수 hashcode;
 		return this.x +", "+this.y;
 	}
-	@Override
+	/*@Override
 	public int getArea() {
 		// TODO Auto-generated method stub
 		return 0;
@@ -45,5 +45,5 @@ public class Shape extends AbstClass{
 	public int getPerimeter() {
 		// TODO Auto-generated method stub
 		return 0;
-	}
+	}*/
 }

@@ -35,6 +35,14 @@ public class Rectangle extends Shape{
 	public String toString() {
 		return super.toString()+", "+this.width + ", "+ this.height;
 	}
+	@Override
+	public int getArea() {
+		return (int)(width * height);
+	}
+	@Override
+	public int getPerimeter() {
+		return (int)(2*(width+height));
+	}
 	
 	
 	

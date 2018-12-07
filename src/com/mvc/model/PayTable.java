@@ -14,10 +14,19 @@ public class PayTable extends Salary implements Calculate, Output {
 		super(name, pay, familyP, overtimeP, incenP, tax, totalPay, family, overtime);
 	}
 	@Override
-	public void calc() {		
-		if(super.getFamily() < 3) {
-			
+	public void calc() {	
+		// 가족수당
+		if(super.getFamily() < 3) 
+			super.setFamilyP(20000 * super.getFamily()) ;
+		else 
+			super.setFamilyP(60000);
+		// 시간 외 수당
+		if(super.getOvertime() > 0) {
+			super.setOvertimeP(getOvertime() * 5000);
 		}
+		// 세금
+		
+		
 	}
 	@Override
 	public void out() {

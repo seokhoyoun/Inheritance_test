@@ -41,7 +41,6 @@ public class Salary {
 		count++;
 	}
 	
-	
 	// Getter & Setter
 	public String getName() {
 		return name;
@@ -130,6 +129,16 @@ public class Salary {
 	public static void setCount(int count) {
 		Salary.count = count;
 	}
+	
+	//test
+	/*public void out() {
+		
+	}
+	public void calc() {
+		
+	}*/
+	
+	
 	
 	
     

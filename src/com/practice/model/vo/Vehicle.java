@@ -19,7 +19,7 @@ public abstract class Vehicle {
 	// Method
 	@Override
 	public String toString() {
-		return this.name +", "+ this.mileage+","+this.kind;
+		return this.name +", "+ this.mileage+", "+this.kind;
 	}
 	public abstract String howToMove();
 	public abstract String howToStop();
